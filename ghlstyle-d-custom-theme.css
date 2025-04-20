@@ -56,11 +56,15 @@
 
 /* Sidebar & Topbar background Color */
 
+/* Sidebar & Topbar background Color */
+
 #sidebar-v2.default-bg-color{
+	background: unset !important;
 	background: var(--ghl-sidebar-color) !important;
 }
 
 .hl_header{
+	background: unset !important;
 	background: var(--ghl-topbar-color) !important;
 }
 
