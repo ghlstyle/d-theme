@@ -1,0 +1,313 @@
+:root {
+  --brand-logo: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c6b5da3b8faf7c503685f3.png);
+  --brand-primary-color: #00854d;
+  --brand-secondary-color: #0075fb;
+  --ghl-topbar-color: #00854d;
+  --ghl-sidebar-color: #00854d;
+  --menu-hover-color: #007644;
+  --sidebar-bottom-toggle: #a5bd21;
+  --ghl-widgets-color: #005c36;
+  --funnel-state-box-color: #00854d;
+  --counter-states-color: #005c36;
+  --ghl-white-label-dashboard-color: #f4f5f8;
+  --ghl-topbar-text-color: #ffffff;
+  --menu-text-color: #ffffff;
+  --ghl-widgets-text-color: #ffffff;
+  --ghl-topbar-icon-color: #ffffff;
+  --ghl-dashboard-icon-color: #83878f;
+  --ghl-widgets-icon-color: #ffffff;
+  --Launch-Pad-Text: "Launch Pad";
+  --Dashboard-Text: "Dashboard";
+  --Conversations-Text: "Conversations";
+  --Calendar-Text: "Calendars";
+  --Contacts-Text: "Contacts";
+  --Opportunities-Text: "Opportunities";
+  --Payments-Text: "Payments & Contracts";
+  --AI-Agents-Text: "AI Agents";
+  --Marketing-Text: "Social Media & Emails";
+  --Automations-Text: "Automations";
+  --Sites-Text: "Sites & Funnels";
+  --Memberships-Text: "Courses";
+  --Media-Storage-Text: "Media Storage";
+  --Reputation-Text: "Online Reviews";
+  --Reporting-Text: "Reports";
+  --App-Marketplace-Text: "App Marketplace";
+  --Mobile-App-Text: "Mobile App";
+  --Settings-Text: "Settings";
+  --launch-pad-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a151d9ea6391ca54ffa.png);
+  --dashboard-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a151d9ea6e030a54ff7.png);
+  --conversations-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a15af5c20624595fc7d.png);
+  --calendars-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a151d9ea65f18a54ff8.png);
+  --contacts-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a155c7165cf2a251dfa.png);
+  --opportunities-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a158127e5f854880efb.png);
+  --payments-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a155c71653eea251df9.png);
+  --ai-agents-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a15d6b4db6d805df748.png);
+  --marketing-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a15d6b4dba8585df747.png);
+  --automations-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a158127e58874880efa.png);
+  --sites-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a15d6b4dbbc995df746.png);
+  --memberships-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a15af5c20d0d495fc7e.png);
+  --media-storage-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a155c7165c57d251df8.png);
+  --reputation-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a158127e55f65880efc.png);
+  --reporting-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a151d9ea6b158a54ff9.png);
+  --app-marketplace-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a15af5c200e1495fc7c.png);
+  --mobile-app-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a158127e573b6880efd.png);
+  --settings-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a15d6b4db6d805df748.png);
+}
+
+
+/* Sidebar & Topbar background Color */
+
+#sidebar-v2.default-bg-color{
+	background: var(--ghl-sidebar-color) !important;
+}
+
+.hl_header{
+	background: var(--ghl-topbar-color) !important;
+}
+
+/* Menu Icon Change */
+
+/* Hide original icons */
+#sb_launchpad img,
+#sb_dashboard img,
+#sb_conversations img,
+#sb_calendars img,
+#sb_contacts img,
+#sb_opportunities img,
+#sb_payments img,
+[id="sb_AI Agents"] img,
+#sb_email-marketing img,
+#sb_automation img,
+#sb_sites img,
+#sb_memberships img,
+#sb_app-media img,
+#sb_reputation img,
+#sb_reporting img,
+#sb_app-marketplace img,
+#sb_location-mobile-app img,
+#sb_settings img, {
+    display: none !important;
+}
+
+/* Display new icons */
+#sb_launchpad::before,
+#sb_dashboard::before,
+#sb_conversations::before,
+#sb_calendars::before,
+#sb_contacts::before,
+#sb_opportunities::before,
+#sb_payments::before,
+[id="sb_AI Agents"]::before,
+#sb_email-marketing::before,
+#sb_automation::before,
+#sb_sites::before,
+#sb_memberships::before,
+#sb_app-media::before,
+#sb_reputation::before,
+#sb_reporting::before,
+#sb_app-marketplace::before,
+#sb_location-mobile-app::before,
+#sb_settings::before {
+    content: '' !important;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* Icon Change */
+#sb_launchpad::before { background-image: var(--launch-pad-icon); }
+#sb_dashboard::before { background-image: var(--dashboard-icon); }
+#sb_conversations::before { background-image: var(--conversations-icon); }
+#sb_calendars::before { background-image: var(--calendars-icon); }
+#sb_contacts::before { background-image: var(--contacts-icon); }
+#sb_opportunities::before { background-image: var(--opportunities-icon); }
+#sb_payments::before { background-image: var(--payments-icon); }
+[id="sb_AI Agents"]::before { background-image: var(--ai-agents-icon); }
+#sb_email-marketing::before { background-image: var(--marketing-icon); }
+#sb_automation::before { background-image: var(--automations-icon); }
+#sb_sites::before { background-image: var(--sites-icon); }
+#sb_memberships::before { background-image: var(--memberships-icon); }
+#sb_app-media::before { background-image: var(--media-storage-icon); }
+#sb_reputation::before { background-image: var(--reputation-icon); }
+#sb_reporting::before { background-image: var(--reporting-icon); }
+#sb_app-marketplace::before { background-image: var(--app-marketplace-icon); }
+#sb_location-mobile-app::before { background-image: var(--mobile-app-icon); }
+#sb_settings::before { background-image: var(--settings-icon); }
+
+#sb_launchpad,
+#sb_dashboard,
+#sb_conversations,
+#sb_calendars,
+#sb_contacts,
+#sb_opportunities,
+#sb_payments,
+[id="sb_AI Agents"],
+#sb_email-marketing,
+#sb_automation,
+#sb_sites,
+#sb_memberships,
+#sb_app-media,
+#sb_reputation,
+#sb_reporting,
+#sb_app-marketplace,
+#sb_location-mobile-app,
+#sb_settings {
+    display: flex;
+    align-items: center;
+}
+
+#sb_launchpad span.nav-title,
+#sb_dashboard span.nav-title,
+#sb_conversations span.nav-title,
+#sb_calendars span.nav-title,
+#sb_contacts span.nav-title,
+#sb_opportunities span.nav-title,
+#sb_payments span.nav-title,
+[id="sb_AI Agents"] span.nav-title,
+#sb_email-marketing span.nav-title,
+#sb_automation span.nav-title,
+#sb_sites span.nav-title,
+#sb_memberships span.nav-title,
+#sb_app-media span.nav-title,
+#sb_reputation span.nav-title,
+#sb_reporting span.nav-title,
+#sb_app-marketplace span.nav-title,
+#sb_location-mobile-app span.nav-title,
+#sb_settings span.nav-title {
+    margin-left: 0;
+}
+
+/* Hide the original text and show the new text */
+#sb_launchpad span,
+#sb_dashboard span,
+#sb_conversations span,
+#sb_calendars span,
+#sb_contacts span,
+#sb_opportunities span,
+#sb_payments span,
+[id="sb_AI Agents"] span,
+#sb_email-marketing span,
+#sb_automation span,
+#sb_sites span,
+#sb_memberships span,
+#sb_app-media span,
+#sb_reputation span,
+#sb_reporting span,
+#sb_app-marketplace span,
+#sb_location-mobile-app span,
+#sb_settings span {
+    visibility: hidden;
+    position: absolute;
+}
+
+#sb_launchpad::after { content: var(--Launch-Pad-Text); }
+#sb_dashboard::after { content: var(--Dashboard-Text); }
+#sb_conversations::after { content: var(--Conversations-Text); }
+#sb_calendars::after { content: var(--Calendar-Text); }
+#sb_contacts::after { content: var(--Contacts-Text); }
+#sb_opportunities::after { content: var(--Opportunities-Text); }
+#sb_payments::after { content: var(--Payments-Text); }
+[id="sb_AI Agents"]::after { content: var(--AI-Agents-Text); }
+#sb_email-marketing::after { content: var(--Marketing-Text); }
+#sb_automation::after { content: var(--Automations-Text); }
+#sb_sites::after { content: var(--Sites-Text); }
+#sb_memberships::after { content: var(--Memberships-Text); }
+#sb_app-media::after { content: var(--Media-Storage-Text); }
+#sb_reputation::after { content: var(--Reputation-Text); }
+#sb_reporting::after { content: var(--Reporting-Text); }
+#sb_app-marketplace::after { content: var(--App-Marketplace-Text); }
+#sb_location-mobile-app::after { content: var(--Mobile-App-Text); }
+#sb_settings::after { content: var(--Settings-Text); }
+
+/* Hide text when menu is collapsed */
+.v2-collapse #sb_launchpad::after,
+.v2-collapse #sb_dashboard::after,
+.v2-collapse #sb_conversations::after,
+.v2-collapse #sb_calendars::after,
+.v2-collapse #sb_contacts::after,
+.v2-collapse #sb_opportunities::after,
+.v2-collapse #sb_payments::after,
+.v2-collapse [id="sb_AI Agents"]::after,
+.v2-collapse #sb_email-marketing::after,
+.v2-collapse #sb_automation::after,
+.v2-collapse #sb_sites::after,
+.v2-collapse #sb_memberships::after,
+.v2-collapse #sb_app-media::after,
+.v2-collapse #sb_reputation::after,
+.v2-collapse #sb_reporting::after,
+.v2-collapse #sb_app-marketplace::after,
+.v2-collapse #sb_location-mobile-app::after,
+.v2-collapse #sb_settings::after {
+    display: none;
+}
+
+/* Ensure text is shown when menu is expanded */
+.v2-open #sb_launchpad::after,
+.v2-open #sb_dashboard::after,
+.v2-open #sb_conversations::after,
+.v2-open #sb_calendars::after,
+.v2-open #sb_contacts::after,
+.v2-open #sb_opportunities::after,
+.v2-open #sb_payments::after,
+.v2-open [id="sb_AI Agents"]::after,
+.v2-open #sb_email-marketing::after,
+.v2-open #sb_automation::after,
+.v2-open #sb_sites::after,
+.v2-open #sb_memberships::after,
+.v2-open #sb_app-media::after,
+.v2-open #sb_reputation::after,
+.v2-open #sb_reporting::after,
+.v2-open #sb_app-marketplace::after,
+.v2-open #sb_location-mobile-app::after,
+.v2-open #sb_settings::after {
+    display: inline-block;
+}
+
+
+/* Hide text when menu is collapsed */
+.v2-collapse #sb_launchpad::after,
+.v2-collapse #sb_dashboard::after,
+.v2-collapse #sb_conversations::after,
+.v2-collapse #sb_calendars::after,
+.v2-collapse #sb_contacts::after,
+.v2-collapse #sb_opportunities::after,
+.v2-collapse #sb_payments::after,
+.v2-collapse [id="sb_AI Agents"]::after,
+.v2-collapse #sb_email-marketing::after,
+.v2-collapse #sb_automation::after,
+.v2-collapse #sb_sites::after,
+.v2-collapse #sb_memberships::after,
+.v2-collapse #sb_app-media::after,
+.v2-collapse #sb_reputation::after,
+.v2-collapse #sb_reporting::after,
+.v2-collapse #sb_app-marketplace::after,
+.v2-collapse #sb_location-mobile-app::after,
+.v2-collapse #sb_settings::after {
+    display: none;
+}
+
+/* Ensure text is shown when menu is expanded */
+.v2-open #sb_launchpad::after,
+.v2-open #sb_dashboard::after,
+.v2-open #sb_conversations::after,
+.v2-open #sb_calendars::after,
+.v2-open #sb_contacts::after,
+.v2-open #sb_opportunities::after,
+.v2-open #sb_payments::after,
+.v2-open [id="sb_AI Agents"]::after,
+.v2-open #sb_email-marketing::after,
+.v2-open #sb_automation::after,
+.v2-open #sb_sites::after,
+.v2-open #sb_memberships::after,
+.v2-open #sb_app-media::after,
+.v2-open #sb_reputation::after,
+.v2-open #sb_reporting::after,
+.v2-open #sb_app-marketplace::after,
+.v2-open #sb_location-mobile-app::after,
+.v2-open #sb_settings::after, {
+    display: inline-block;
+}
