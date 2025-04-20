@@ -1,9 +1,7 @@
 name: Purge jsDelivr Cache
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:  # manual action run
 
 jobs:
   purge-cache:
@@ -14,3 +12,22 @@ jobs:
         with:
           url: |
             https://cdn.jsdelivr.net/gh/ghlstyle/d-theme@latest/ghlstyle-d-custom-theme.css
+
+# ------------------------------------------------------
+
+# name: Purge jsDelivr Cache
+
+# on:
+#   push:
+#     branches:
+#       - main
+
+# jobs:
+#   purge-cache:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Purge jsDelivr cache
+#         uses: gacts/purge-jsdelivr-cache@v1
+#         with:
+#           url: |
+#             https://cdn.jsdelivr.net/gh/ghlstyle/d-theme@latest/ghlstyle-d-custom-theme.css
