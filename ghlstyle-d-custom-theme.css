@@ -54,7 +54,7 @@
   --settings-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a15d6b4db6d805df748.png);
 }
 
-/* Sidebar & Topbar background Color */
+/* Sidebar & Topbar background Colors */
 
 #sidebar-v2.default-bg-color{
 	background: var(--ghl-sidebar-color) !important;
