@@ -1,3 +1,58 @@
+/* :root {
+  --brand-logo: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c6b5da3b8faf7c503685f3.png);
+  --brand-primary-color: #00854d;
+  --brand-secondary-color: #0075fb;
+  --ghl-topbar-color: #00854d;
+  --ghl-sidebar-color: #00854d;
+  --menu-hover-color: #007644;
+  --sidebar-bottom-toggle: #a5bd21;
+  --ghl-widgets-color: #005c36;
+  --funnel-state-box-color: #00854d;
+  --counter-states-color: #005c36;
+  --ghl-white-label-dashboard-color: #f4f5f8;
+  --ghl-topbar-text-color: #ffffff;
+  --menu-text-color: #ffffff;
+  --ghl-widgets-text-color: #ffffff;
+  --ghl-topbar-icon-color: #ffffff;
+  --ghl-dashboard-icon-color: #83878f;
+  --ghl-widgets-icon-color: #ffffff;
+  --Launch-Pad-Text: "Launch Pad";
+  --Dashboard-Text: "Dashboard";
+  --Conversations-Text: "Conversations";
+  --Calendar-Text: "Calendars";
+  --Contacts-Text: "Contacts";
+  --Opportunities-Text: "Opportunities";
+  --Payments-Text: "Payments & Contracts";
+  --AI-Agents-Text: "AI Agents";
+  --Marketing-Text: "Social Media & Emails";
+  --Automations-Text: "Automations";
+  --Sites-Text: "Sites & Funnels";
+  --Memberships-Text: "Courses";
+  --Media-Storage-Text: "Media Storage";
+  --Reputation-Text: "Online Reviews";
+  --Reporting-Text: "Reports";
+  --App-Marketplace-Text: "App Marketplace";
+  --Mobile-App-Text: "Mobile App";
+  --Settings-Text: "Settings";
+  --launch-pad-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a151d9ea6391ca54ffa.png);
+  --dashboard-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a151d9ea6e030a54ff7.png);
+  --conversations-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a15af5c20624595fc7d.png);
+  --calendars-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a151d9ea65f18a54ff8.png);
+  --contacts-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a155c7165cf2a251dfa.png);
+  --opportunities-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a158127e5f854880efb.png);
+  --payments-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a155c71653eea251df9.png);
+  --ai-agents-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a15d6b4db6d805df748.png);
+  --marketing-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a15d6b4dba8585df747.png);
+  --automations-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a158127e58874880efa.png);
+  --sites-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a15d6b4dbbc995df746.png);
+  --memberships-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a15af5c20d0d495fc7e.png);
+  --media-storage-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a155c7165c57d251df8.png);
+  --reputation-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a158127e55f65880efc.png);
+  --reporting-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a151d9ea6b158a54ff9.png);
+  --app-marketplace-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a15af5c200e1495fc7c.png);
+  --mobile-app-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a158127e573b6880efd.png);
+  --settings-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a15d6b4db6d805df748.png);
+} */
 
 /* Sidebar & Topbar background Color */
 
