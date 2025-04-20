@@ -1,4 +1,5 @@
 :root {
+  --important-css-loaded: true;
   --brand-logo: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c6b5da3b8faf7c503685f3.png);
   --brand-primary-color: #00854d;
   --brand-secondary-color: #0075fb;
@@ -54,10 +55,11 @@
   --settings-icon: url(https://storage.googleapis.com/msgsndr/Ll80aLqvCGY7RHke6mMj/media/67c56a15d6b4db6d805df748.png);
 }
 
-/* Sidebar & Topbar background Color */
 
 /* Sidebar & Topbar background Color */
 
+html body .v2-open #sidebar-v2,
+.v2-open #sidebar-v2.v2-open #sidebar-v2,
 #sidebar-v2.default-bg-color{
 	background: unset !important;
 	background: var(--ghl-sidebar-color) !important;
