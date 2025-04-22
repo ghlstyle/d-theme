@@ -761,7 +761,7 @@ div.topmenu-navtitle {
 
 /* Location switcher container */
 #sidebar-v2 #location-switcher-sidbar-v2 {
-	background: var(--brand-acent-color) !important;
+	background: color-mix(in srgb, var(--brand-acent-color), transparent 50%) !important;
 	max-width: 210px !important;
 	margin: 0 auto !important;
 	margin-bottom: 20px !important;
