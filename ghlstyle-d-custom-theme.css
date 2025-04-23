@@ -2,13 +2,15 @@
 
 :root {
 	--important-css-loaded: true;
-	--headline-font: Roboto;
+	--headline-font: Poppins;
 	--body-font: Poppins;
 	--white-color: #ffffffff;
 	--dark-color: #1A202C;
 	--Acent-color: #4B5563;
 	--ghlstyle-transparent: rgba(0, 0, 0, 0);
 	--scroll-color: #1A202C;
+	--ghl-white-label-dashboard-color:#ededed;
+	
 	--top-nav-menu-color: #2a3941ff;
 	--top-nav-menu-active-color: #38a9e5ff;
 	--top-nav-menu-hover-color: #38a9e5ff;
@@ -17,17 +19,14 @@
 	--top-nav-menu-active-bg: #f25a0700;
 	--top-nav-menu-font-size: 14px;
 	--top-nav-border-width: 0 0 0.1rem 0;
-	;
 	--top-nav-border-radius: 1px;
 	--top-nav-border-style: solid;
 	--top-nav-border-color: #ffffff00;
 	--top-nav-border-hover-width: 0 0 0.1rem 0;
-	;
 	--top-nav-border-hover-radius: 1px;
 	--top-nav-border-hover-style: solid;
 	--top-nav-border-hover-color: color-mix(in srgb, var(--menu-active-color), transparent 20%);
 	--top-nav-border-active-width: 0 0 0.1rem 0;
-	;
 	--top-nav-border-active-radius: 1px;
 	--top-nav-border-active-style: solid;
 	--top-nav-border-active-color: color-mix(in srgb, var(--menu-active-color), transparent 0%);
@@ -425,6 +424,28 @@ html body .v2-open #sidebar-v2,
 	content: var(--Settings-Text);
 }
 
+/* Show icon when menu is collapsed */
+.v2-collapse #sidebar-v2 nav a#sb_launchpad,
+.v2-collapse #sidebar-v2 nav a#sb_dashboard,
+.v2-collapse #sidebar-v2 nav a#sb_conversations,
+.v2-collapse #sidebar-v2 nav a#sb_calendars,
+.v2-collapse #sidebar-v2 nav a#sb_contacts,
+.v2-collapse #sidebar-v2 nav a#sb_opportunities,
+.v2-collapse #sidebar-v2 nav a#sb_payments,
+.v2-collapse #sidebar-v2 nav a[id="sb_AI Agents"],
+.v2-collapse #sidebar-v2 nav a#sb_email-marketing,
+.v2-collapse #sidebar-v2 nav a#sb_automation,
+.v2-collapse #sidebar-v2 nav a#sb_sites,
+.v2-collapse #sidebar-v2 nav a#sb_memberships,
+.v2-collapse #sidebar-v2 nav a#sb_app-media,
+.v2-collapse #sidebar-v2 nav a#sb_reputation,
+.v2-collapse #sidebar-v2 nav a#sb_reporting,
+.v2-collapse #sidebar-v2 nav a#sb_app-marketplace,
+.v2-collapse #sidebar-v2 nav a#sb_location-mobile-app,
+.v2-collapse #sidebar-v2 nav a#sb_settings {
+ display: inline-block !important;
+}
+
 /* Hide text when menu is collapsed */
 .v2-collapse #sb_launchpad::after,
 .v2-collapse #sb_dashboard::after,
@@ -528,7 +549,7 @@ html body .v2-open #sidebar-v2,
 	gap: 5px !important;
 	align-items: center !important;
 	position: relative !important;
-	padding-left: 12px !important;
+	padding-left: 17px !important;
 }
 
 /* Top nav links */
@@ -614,6 +635,78 @@ div.topmenu-navtitle {
 	background-color: var(--ghl-sidebar-color) !important;
 }
 
+/* ================= HEADER ICON STYLES ================= */
+
+/* Power Dialer Icon */
+
+#template-power-dialer button > svg{
+ Display:none !important;
+}
+
+#template-power-dialer button::before {
+	content: '' !important;
+	background-image: var(--icon-dialer);
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+
+
+/* Notification Icon */
+
+#recent_activities-toggle i {
+  display: none !important;
+}
+
+#recent_activities-toggle::before {
+	content: '' !important;
+	background-image: var(--icon-activitie);
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+
+
+/* Help Icon */
+
+#hl_header--help-icon i {
+  display: none !important;
+}
+
+#hl_header--help-icon::before {
+	content: '' !important;
+	background-image: var(--icon-help);
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+
+
+/* Canny Icon */
+
+#canny_logs-toggle i {
+  display: none !important;
+}
+
+#canny_logs-toggle::before {
+	content: '' !important;
+	background-image: var(--icon-canny-logs);
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
 
 /* ================= CARD STYLES ================ */
 
@@ -826,6 +919,7 @@ div.topmenu-navtitle {
 /* Global search button style */
 #globalSearchOpener {
 	margin-right: auto !important;
+  margin-left: auto !important;
 	background-color: color-mix(in srgb, var(--brand-acent-color), transparent 50%) !important;
 }
 
@@ -833,6 +927,8 @@ body #quickActions {
 	border: none !important;
 	border-radius: 50px !important;
 	background-color: color-mix(in srgb, var(--brand-acent-color), transparent 50%) !important;
+	margin-right: auto !important;
+  margin-left: auto !important;
 }
 
 
@@ -1011,4 +1107,26 @@ body[data-theme="default-dark-v1"] .n-button--primary-type {
 
 #location_dashboard-datepicker-dashboard_header_range .n-date-picker-icon, #location_dashboard-datepicker-dashboard_header_range .n-date-picker-icon > svg > g > g {
 	fill: var(--ghl-dashboard-icon-color) !important;
+}
+
+/* Hide extra svg icon */
+#sb_launchpad svg,
+#sb_dashboard svg,
+#sb_conversations svg,
+#sb_calendars svg,
+#sb_contacts svg,
+#sb_opportunities svg,
+#sb_payments svg,
+[id="sb_AI Agents"] svg,
+#sb_email-marketing svg,
+#sb_automation svg,
+#sb_sites svg,
+#sb_memberships svg,
+#sb_app-media svg,
+#sb_reputation svg,
+#sb_reporting svg,
+#sb_app-marketplace svg,
+#sb_location-mobile-app svg,
+#sb_settings svg {
+ display: none;
 }
