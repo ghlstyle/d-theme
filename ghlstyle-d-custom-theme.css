@@ -1095,7 +1095,7 @@ body[data-theme="default-dark-v1"] .n-button--primary-type, #location-dashboard-
 	--n-border-pressed: 1px solid var(--brand-primary-color) !important;
 	--n-border-focus: 1px solid var(--brand-primary-color) !important;
 	--n-border-disabled: 1px solid var(--brand-primary-color) !important;
-	background-color: var(--brand-primary-color) !important;
+	background-color: var(--brand-secondary-color) !important;
 }
 
 
