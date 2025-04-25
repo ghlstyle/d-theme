@@ -843,11 +843,11 @@ div.topmenu-navtitle {
 }
 
 .n-base-selection .n-base-selection-overlay .n-base-selection-overlay__wrapper,.n-base-selection-input__content {
-	color: color-mix(in srgb, var(--white-color), transparent 40%) !important;
+	color: color-mix(in srgb, var(--ghl-widgets-text-color), transparent 30%) !important;
 }
 
 .n-base-selection .n-base-suffix .n-base-suffix__arrow {
-	color: color-mix(in srgb, var(--white-color), transparent 40%) !important;
+	color: color-mix(in srgb, var(--ghl-widgets-text-color), transparent 30%) !important;
 }
 
 /* ================= LOCATION SWITCHER STYLES ================= */
