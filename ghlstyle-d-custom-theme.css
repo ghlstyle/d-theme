@@ -1083,7 +1083,7 @@ nav
 /* ================= SECOND COLOR STYLES ================= */
 
 /* Primary-type button uses second color for fill */
-body[data-theme="default-dark-v1"] .n-button--primary-type, #location-dashboard-header button {
+body[data-theme="default-dark-v1"] .n-button--primary-type, #location-dashboard-header button, #location-dashboard-header .n-input {
 	--n-color: var(--brand-secondary-color) !important;
 	--n-color-hover: var(--brand-secondary-color) !important;
 	--n-color-pressed: var(--brand-secondary-color) !important;
