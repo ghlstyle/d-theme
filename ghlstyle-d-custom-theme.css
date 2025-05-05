@@ -855,6 +855,10 @@ div.topmenu-navtitle {
 	color: color-mix(in srgb, var(--ghl-widgets-text-color), transparent 30%) !important;
 }
 
+#pipelineDropdDown-listview .n-base-selection .n-base-selection-overlay .n-base-selection-overlay__wrapper {
+ color: rgb(16, 24, 40) !important;
+}
+
 /* ================= LOCATION SWITCHER STYLES ================= */
 
 /* Location switcher container */
