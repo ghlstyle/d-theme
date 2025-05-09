@@ -111,6 +111,9 @@ html body .v2-open #sidebar-v2,
 	margin: 0 auto !important;
 }
 
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer > nav .default-bg-color {
+    background: var(--ghl-sidebar-color) !important;
+}
 
 /* ================= SIDEBAR LINK STATES ================ */
 
@@ -915,6 +918,18 @@ div.topmenu-navtitle {
 	color: var(--white-color) !important;
 }
 
+#location-dashboard #location-dashboard-header .location-dashboard_header #location_dashboard-datepicker-dashboard_header_range .n-input-wrapper .n-input__input .n-input__input-el{
+    color: var(--ghl-dashboard-icon-color) !important;
+}
+
+#location-dashboard #location-dashboard-header .location-dashboard_header .w-full .cursor-pointer {
+    background: var(--brand-secondary-color) !important;
+}
+
+#location-dashboard #location-dashboard-header .location-dashboard_header .w-full .cursor-pointer > svg {
+    color: var(--ghl-dashboard-icon-color) !important;
+}
+
 /* ================= BACK BUTTON, SEARCH, QUICK ACTIONS & DIVIDER ================= */
 
 /* Global search button style */
@@ -949,7 +964,7 @@ body #quickActions {
 }
 
 .sidebar-v2-location #sidebar-v2 #globalSearchOpener .search-shortcut, .sidebar-v2-location #sidebar-v2 #quickActions .search-shortcut {
-	background-color: color-mix(in srgb, #000000, transparent 80%);
+	background-color: color-mix(in srgb, #000000, transparent 80%) !important;
 	color: var(--white-color) !important;
 }
 
@@ -983,13 +998,13 @@ body #quickActions {
 /* Back Button All CSS */
 .sidebar-v2-location #sidebar-v2 #backButtonv2,
 .sidebar-v2-agency #sidebar-v2 #backButtonv2 {
-	background-color: var(--sidebar-menu-active-bg) !important;
-	color: var(--sidebar-menu-active-color) !important;
+	background-color: var(--menu-active-color) !important;
+	color: var(--menu-text-color) !important;
 }
 
 .sidebar-v2-location #sidebar-v2 #backButtonv2 + .menu-title,
 .sidebar-v2-agency #sidebar-v2 #backButtonv2 + .menu-title {
-	color: var(--sidebar-menu-color) !important;
+	color: var(--menu-text-color) !important;
 	padding-left: 20px !important;
 }
 
