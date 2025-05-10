@@ -111,7 +111,7 @@ html body .__USER__ .v2-open #sidebar-v2,
 	margin: 0 auto !important;
 }
 
-.__USER__ .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer > nav .default-bg-color {
+.__USER__.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer > nav .default-bg-color {
     background: var(--ghl-sidebar-color) !important;
 }
 
