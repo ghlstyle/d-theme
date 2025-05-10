@@ -63,7 +63,7 @@ html body .v2-open #sidebar-v2,
 	background: var(--ghl-sidebar-color) !important;
 }
 
-.hl_header {
+.__USER__ .hl_header {
 	background: unset !important;
 	background: var(--ghl-topbar-color) !important;
 }
