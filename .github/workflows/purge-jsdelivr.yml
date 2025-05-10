@@ -11,7 +11,6 @@ jobs:
         uses: gacts/purge-jsdelivr-cache@v1
         with:
           url: |
-            https://cdn.jsdelivr.net/gh/ghlstyle/d-theme@latest/ghlstyle-d-custom-theme.css
             https://cdn.jsdelivr.net/gh/ghlstyle/d-theme@latest/user-d-custom-theme.css
 
 
