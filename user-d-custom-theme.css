@@ -1125,6 +1125,10 @@ body[data-theme="default-dark-v1"] .__USER__ .n-button--primary-type, .__USER__ 
 	fill: var(--ghl-dashboard-icon-color) !important;
 }
 
+.__USER__.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer #sb_calendars:before{
+  all: unset !important;
+}
+
 /* Hide extra svg icon */
 .__USER__ #sb_launchpad svg,
 .__USER__ #sb_dashboard svg,
