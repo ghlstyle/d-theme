@@ -12,7 +12,7 @@ jobs:
         with:
           url: |
             https://cdn.jsdelivr.net/gh/ghlstyle/d-theme@latest/ghlstyle-d-custom-theme.css
-            https://cdn.jsdelivr.net/gh/ghlstyle/d-theme@latest/test-d-custom-theme.css
+            https://cdn.jsdelivr.net/gh/ghlstyle/d-theme@latest/user-d-custom-theme.css
 
 
 # ------------------------------------------------------
