@@ -39,11 +39,11 @@
 /* ================= GLOBAL FONT SETTING ================ */
 
 /* Force consistent font across common elements */
-div,
-p,
-span,
-a,
-button {
+.__USER__ div,
+.__USER__ p,
+.__USER__ span,
+.__USER__ a,
+.__USER__ button {
 	font-family: var(--body-font) !important;
  /* Enforces body font */;
 }
@@ -95,6 +95,7 @@ html body .__USER__ .v2-open #sidebar-v2,
 ::-webkit-scrollbar-thumb:active {
 	background-color: color-mix(in srgb, var(--scroll-color), transparent 60%);
 }
+
 
 /* ================= SIDEBAR LAYOUT ================ */
 
@@ -164,7 +165,6 @@ html body .__USER__ .v2-open #sidebar-v2,
 .__USER__ #sidebar-v2 nav a.active {
 	color: color-mix(in srgb, var(--menu-text-color), transparent 0%) !important;
 }
-
 
 /* ================= MENU ICON CHANGE ================ */
 
@@ -335,7 +335,6 @@ html body .__USER__ .v2-open #sidebar-v2,
 	margin-left: 0;
 }
 
-
 /* ================= MENU TEXT STYLES ================ */
 
 /* Hide the original text and show the new text */
@@ -452,7 +451,7 @@ html body .__USER__ .v2-open #sidebar-v2,
 .__USER__ .v2-collapse #sidebar-v2 nav a#sb_app-marketplace,
 .__USER__ .v2-collapse #sidebar-v2 nav a#sb_location-mobile-app,
 .__USER__ .v2-collapse #sidebar-v2 nav a#sb_settings {
-	display: inline-block !important;
+ display: inline-block !important;
 }
 
 /* Hide text when menu is collapsed */
@@ -500,12 +499,56 @@ html body .__USER__ .v2-open #sidebar-v2,
 }
 
 
+/* Hide text when menu is collapsed */
+.__USER__ .v2-collapse #sb_launchpad::after,
+.__USER__ .v2-collapse #sb_dashboard::after,
+.__USER__ .v2-collapse #sb_conversations::after,
+.__USER__ .v2-collapse #sb_calendars::after,
+.__USER__ .v2-collapse #sb_contacts::after,
+.__USER__ .v2-collapse #sb_opportunities::after,
+.__USER__ .v2-collapse #sb_payments::after,
+.__USER__ .v2-collapse [id="sb_AI Agents"]::after,
+.__USER__ .v2-collapse #sb_email-marketing::after,
+.__USER__ .v2-collapse #sb_automation::after,
+.__USER__ .v2-collapse #sb_sites::after,
+.__USER__ .v2-collapse #sb_memberships::after,
+.__USER__ .v2-collapse #sb_app-media::after,
+.__USER__ .v2-collapse #sb_reputation::after,
+.__USER__ .v2-collapse #sb_reporting::after,
+.__USER__ .v2-collapse #sb_app-marketplace::after,
+.__USER__ .v2-collapse #sb_location-mobile-app::after,
+.__USER__ .v2-collapse #sb_settings::after {
+	display: none;
+}
+
+/* Ensure text is shown when menu is expanded */
+.__USER__ .v2-open #sb_launchpad::after,
+.__USER__ .v2-open #sb_dashboard::after,
+.__USER__ .v2-open #sb_conversations::after,
+.__USER__ .v2-open #sb_calendars::after,
+.__USER__ .v2-open #sb_contacts::after,
+.__USER__ .v2-open #sb_opportunities::after,
+.__USER__ .v2-open #sb_payments::after,
+.__USER__ .v2-open [id="sb_AI Agents"]::after,
+.__USER__ .v2-open #sb_email-marketing::after,
+.__USER__ .v2-open #sb_automation::after,
+.__USER__ .v2-open #sb_sites::after,
+.__USER__ .v2-open #sb_memberships::after,
+.__USER__ .v2-open #sb_app-media::after,
+.__USER__ .v2-open #sb_reputation::after,
+.__USER__ .v2-open #sb_reporting::after,
+.__USER__ .v2-open #sb_app-marketplace::after,
+.__USER__ .v2-open #sb_location-mobile-app::after,
+.__USER__ .v2-open #sb_settings::after {
+	display: inline-block;
+}
+
 /* ================= TOP NAV BASE STYLES ================ */
 
 /* Top nav */
 .__USER__ .hl_header > .topmenu-nav {
 	background: var(--top-nav-bg-color) !important;
-  /*background-image: var(--top-nav-bg-gradient) !important;*/
+  /*background-image: var(--top-nav-bg-gradient) !important;*/;
 }
 
 /* Top nav container */
@@ -541,6 +584,7 @@ html body .__USER__ .v2-open #sidebar-v2,
 	left: 20px !important;
 	z-index: 99 !important;
 }
+
 
 /* ================= TOP NAV CUSTOMIZATION ================ */
 
@@ -602,8 +646,9 @@ html body .__USER__ .v2-open #sidebar-v2,
 /* ================= HEADER ICON STYLES ================= */
 
 /* Power Dialer Icon */
-.__USER__ #template-power-dialer button > svg {
-	display: none !important;
+
+.__USER__ #template-power-dialer button > svg{
+ Display:none !important;
 }
 
 .__USER__ #template-power-dialer button::before {
@@ -617,9 +662,11 @@ html body .__USER__ .v2-open #sidebar-v2,
 	vertical-align: middle;
 }
 
+
 /* Notification Icon */
+
 .__USER__ #recent_activities-toggle i {
-	display: none !important;
+  display: none !important;
 }
 
 .__USER__ #recent_activities-toggle::before {
@@ -633,9 +680,11 @@ html body .__USER__ .v2-open #sidebar-v2,
 	vertical-align: middle;
 }
 
+
 /* Help Icon */
+
 .__USER__ #hl_header--help-icon i {
-	display: none !important;
+  display: none !important;
 }
 
 .__USER__ #hl_header--help-icon::before {
@@ -649,9 +698,11 @@ html body .__USER__ .v2-open #sidebar-v2,
 	vertical-align: middle;
 }
 
+
 /* Canny Icon */
+
 .__USER__ #canny_logs-toggle i {
-	display: none !important;
+  display: none !important;
 }
 
 .__USER__ #canny_logs-toggle::before {
@@ -664,7 +715,6 @@ html body .__USER__ .v2-open #sidebar-v2,
 	background-repeat: no-repeat;
 	vertical-align: middle;
 }
-
 
 /* ================= CARD STYLES ================ */
 
@@ -728,7 +778,7 @@ html body .__USER__ .v2-open #sidebar-v2,
 	border-top-left-radius: 8px !important;
 	border-top-right-radius: 8px !important;
 	background: var(--ghl-widgets-color) !important;
-	/* background-image: var(--card-header-bg-gradient) !important; */
+  /* background-image: var(--card-header-bg-gradient) !important; */;
 }
 
 /* Card title text */
@@ -741,7 +791,9 @@ html body .__USER__ .v2-open #sidebar-v2,
 	color: color-mix(in srgb, var(--ghl-widgets-text-color), transparent 30%) !important;
 }
 
+
 /* Card body text & background */
+
 .__USER__ #location-dashboard .hl-card-content {
 	background: color-mix(in srgb, var(--ghl-widgets-bg-color), transparent 0%) !important;
 	border-bottom-right-radius: 8px !important;
@@ -784,19 +836,27 @@ html body .__USER__ .v2-open #sidebar-v2,
 
 .__USER__ .n-base-selection {
 	border: 0px solid red !important;
+}
+
+/* .__USER__ .n-input {
+    box-shadow: 0 0px 0px var(--ghlstyle-transparent) !important;
+    border-radius: 5px !important;
+    color: red !important;
+} */
+
+.__USER__ .n-base-selection {
 	box-shadow: 0 0px 0px var(--ghlstyle-transparent) !important;
 	border-radius: 5px !important;
 	color: red !important;
 }
 
-.__USER__ .hl-card-header .n-base-selection .n-base-selection-overlay .n-base-selection-overlay__wrapper,
-.__USER__ .hl-card-header .n-base-selection-input__content,
-.__USER__ .hl-card-header .n-base-selection .n-base-suffix .n-base-suffix__arrow {
-	color: color-mix(in srgb, var(--ghl-widgets-text-color), transparent 30%) !important;
+.__USER__ .hl-card-header .n-base-selection .n-base-selection-overlay .n-base-selection-overlay__wrapper, .__USER__ .hl-card-header .n-base-selection-input__content, .__USER__ .hl-card-header .n-base-selection .n-base-suffix .n-base-suffix__arrow {
+    color: color-mix(in srgb, var(--ghl-widgets-text-color), transparent 30%) !important;
 }
 
 /* ================= LOCATION SWITCHER STYLES ================= */
 
+/* Location switcher container */
 .__USER__ #sidebar-v2 #location-switcher-sidbar-v2 {
 	background: color-mix(in srgb, var(--brand-acent-color), transparent 50%) !important;
 	max-width: 210px !important;
@@ -805,87 +865,110 @@ html body .__USER__ .v2-open #sidebar-v2,
 	width: 100% !important;
 }
 
+/* Location name text */
 .__USER__ #sidebar-v2 #location-switcher-sidbar-v2 .hl_switcher-loc-name {
 	color: var(--white-color) !important;
 }
 
+/* Location city text */
 .__USER__ #sidebar-v2 #location-switcher-sidbar-v2 .hl_switcher-loc-city {
 	color: var(--white-color) !important;
 	opacity: 0.8 !important;
 }
 
+/* Location icon fill */
 .__USER__ #sidebar-v2 #location-switcher-sidbar-v2 .hl_location_icon {
 	fill: var(--dark-color) !important;
 }
 
+/* Icon rectangle background */
 .__USER__ #sidebar-v2 #location-switcher-sidbar-v2 .hl_location_icon rect {
 	fill: var(--white-color) !important;
 	fill-opacity: 0.6 !important;
 }
 
-.__USER__ .sidebar-v2-location #sidebar-v2 #location-switcher-sidbar-v2 .hl_location_icon g path {
+/* Location icon stroke */
+.__USER__ .sidebar-v2-location
+  #sidebar-v2
+  #location-switcher-sidbar-v2
+  .hl_location_icon
+  g
+  path {
 	stroke: var(--white-color) !important;
 	stroke-opacity: 0.8 !important;
 }
 
-.__USER__ #sidebar-v2 #location-switcher-sidbar-v2 .switcher-caret-holder .fa-angle-up:before,
-.__USER__ .sidebar-v2-location #sidebar-v2 #location-switcher-sidbar-v2 .switcher-caret-holder .fa-angle-down:before {
+/* Caret icon color */
+.__USER__ #sidebar-v2
+  #location-switcher-sidbar-v2
+  .switcher-caret-holder
+  .fa-angle-up:before,
+.__USER__ .sidebar-v2-location
+  #sidebar-v2
+  #location-switcher-sidbar-v2
+  .switcher-caret-holder
+  .fa-angle-down:before {
 	color: var(--white-color) !important;
 	opacity: 1 !important;
 }
 
+/* Tooltip style */
 .__USER__ .tooltip .tooltip-inner {
 	background-color: var(--dark-color) !important;
 	color: var(--white-color) !important;
 }
 
-.__USER__ #location-dashboard #location-dashboard-header .location-dashboard_header #location_dashboard-datepicker-dashboard_header_range .n-input-wrapper .n-input__input .n-input__input-el {
-	color: var(--ghl-dashboard-icon-color) !important;
+.__USER__ #location-dashboard #location-dashboard-header .location-dashboard_header #location_dashboard-datepicker-dashboard_header_range .n-input-wrapper .n-input__input .n-input__input-el{
+    color: var(--ghl-dashboard-icon-color) !important;
 }
 
 .__USER__ #location-dashboard #location-dashboard-header .location-dashboard_header .w-full .cursor-pointer {
-	background: var(--brand-secondary-color) !important;
+    background: var(--brand-secondary-color) !important;
 }
 
 .__USER__ #location-dashboard #location-dashboard-header .location-dashboard_header .w-full .cursor-pointer > svg {
-	color: var(--ghl-dashboard-icon-color) !important;
+    color: var(--ghl-dashboard-icon-color) !important;
 }
-
 
 /* ================= BACK BUTTON, SEARCH, QUICK ACTIONS & DIVIDER ================= */
 
+/* Global search button style */
 .__USER__ #globalSearchOpener {
 	margin-right: auto !important;
-	margin-left: auto !important;
+  margin-left: auto !important;
 	background-color: color-mix(in srgb, var(--brand-acent-color), transparent 50%) !important;
 }
 
-.__USER__ body #quickActions {
+body .__USER__ #quickActions {
 	border: none !important;
 	border-radius: 50px !important;
 	background-color: color-mix(in srgb, var(--brand-acent-color), transparent 50%) !important;
 	margin-right: auto !important;
-	margin-left: auto !important;
+  margin-left: auto !important;
 }
 
+
+/* Search icon color */
 .__USER__ .sidebar-v2-location #sidebar-v2 #globalSearchOpener .search-icon {
 	fill: var(--white-color) !important;
 }
 
+/* Search placeholder text color */
 .__USER__ .sidebar-v2-location #sidebar-v2 #globalSearchOpener .search-placeholder {
 	color: var(--white-color) !important;
 }
 
+/* Quick actions icon color invert */
 .__USER__ #quickActions img {
 	filter: brightness(0) invert(1) !important;
 }
 
-.__USER__ .sidebar-v2-location #sidebar-v2 #globalSearchOpener .search-shortcut,
-.__USER__ .sidebar-v2-location #sidebar-v2 #quickActions .search-shortcut {
+.__USER__ .sidebar-v2-location #sidebar-v2 #globalSearchOpener .search-shortcut, .__USER__ .sidebar-v2-location #sidebar-v2 #quickActions .search-shortcut {
 	background-color: color-mix(in srgb, #000000, transparent 80%) !important;
 	color: var(--white-color) !important;
 }
 
+/* Divider styling in nav (non-clickable label) */
 .__USER__ .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.divider {
 	pointer-events: none !important;
 	border: none !important;
@@ -893,17 +976,26 @@ html body .__USER__ .v2-open #sidebar-v2,
 	opacity: 1 !important;
 }
 
-.__USER__ .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.divider p span {
+/* Divider label text */
+.__USER__ .sidebar-v2-location
+  #sidebar-v2
+  .hl_nav-header-without-footer
+  nav
+  a.divider
+  p
+  span {
 	color: var(--dark-color) !important;
 	background: transparent !important;
 	padding: 0px !important;
 	font-size: 12px !important;
 }
 
+/* Remove border around divider label */
 .__USER__ .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.divider p {
 	border: none !important;
 }
 
+/* Back Button All CSS */
 .__USER__ .sidebar-v2-location #sidebar-v2 #backButtonv2,
 .__USER__ .sidebar-v2-agency #sidebar-v2 #backButtonv2 {
 	background-color: var(--menu-active-color) !important;
@@ -918,14 +1010,17 @@ html body .__USER__ .v2-open #sidebar-v2,
 
 /* ================= COLLAPSE BUTTON STYLES ================= */
 
+/* Collapse button background */
 .__USER__ #sidebar-v2 .hl_collapse-button {
 	background: var(--ghlstyle-transparent) !important;
 }
 
+/* Collapse button text color for agency layout */
 .__USER__ .sidebar-v2-agency #sidebar-v2 .hl_collapse-button {
 	color: var(--white-color);
 }
 
+/* Collapse button custom style for location layout */
 .__USER__ .sidebar-v2-location #sidebar-v2 .hl_collapse-button::before {
 	color: var(--sidebar-bottom-toggle) !important;
 	background: var(--white-color) !important;
@@ -938,16 +1033,19 @@ html body .__USER__ .v2-open #sidebar-v2,
 
 /* ================= PRIMARY COLOR STYLES ================= */
 
+/* Active pagination button (dark theme) */
 body[data-theme="default-dark-v1"] .__USER__ .pagination a.active {
 	background-color: var(--brand-primary-color) !important;
 	color: #fff !important;
 }
 
+/* Hover pagination button (dark theme) */
 body[data-theme="default-dark-v1"] .__USER__ .pagination a:hover {
 	background-color: var(--brand-primary-color) !important;
 	color: #fff !important;
 }
 
+/* Button base style using primary color */
 body[data-theme="default-dark-v1"] .__USER__ button {
 	font-weight: 400;
 	--n-color: var(--brand-primary-color);
@@ -968,6 +1066,7 @@ body[data-theme="default-dark-v1"] .__USER__ button {
 	--n-border-disabled: 1px solid var(--brand-primary-color);
 }
 
+/* Primary color override for specific button backgrounds */
 body .__USER__ button.bg-apple-500 {
 	background-color: var(--brand-primary-color) !important;
 }
@@ -976,26 +1075,31 @@ body .__USER__ button.bg-curious-blue-600 {
 	background-color: var(--brand-primary-color) !important;
 }
 
+/* Primary color override for text */
 body .__USER__ .text-curious-blue-600 {
 	color: var(--brand-primary-color) !important;
 }
 
+/* Primary color override for focus ring */
 body .__USER__ .focus\:ring-curious-blue-500:focus {
 	--tw-ring-opacity: 1;
 	--tw-ring-color: var(--brand-primary-color) !important;
 }
 
-.__USER__ nav a[style="color: rgb(56, 160, 219); border-color: rgb(56, 160, 219); padding-left: 10px; padding-right: 10px;"],
-.__USER__ nav a[style="color: rgb(56, 160, 219); padding-left: 10px; padding-right: 10px; border-color: rgb(56, 160, 219);"] {
+/* Primary color override for active tabs */
+.__USER__ nav
+  a[style="color: rgb(56, 160, 219); border-color: rgb(56, 160, 219); padding-left: 10px; padding-right: 10px;"],
+.__USER__ nav
+  a[style="color: rgb(56, 160, 219); padding-left: 10px; padding-right: 10px; border-color: rgb(56, 160, 219);"] {
 	color: var(--brand-primary-color) !important;
 	border-color: var(--brand-primary-color) !important;
 }
 
+
 /* ================= SECOND COLOR STYLES ================= */
 
-body[data-theme="default-dark-v1"] .__USER__ .n-button--primary-type,
-.__USER__ #location-dashboard-header button,
-.__USER__ #location-dashboard-header .n-input {
+/* Primary-type button uses second color for fill */
+body[data-theme="default-dark-v1"] .__USER__ .n-button--primary-type, .__USER__ #location-dashboard-header button, .__USER__ #location-dashboard-header .n-input {
 	--n-color: var(--brand-secondary-color) !important;
 	--n-color-hover: var(--brand-secondary-color) !important;
 	--n-color-pressed: var(--brand-secondary-color) !important;
@@ -1010,14 +1114,14 @@ body[data-theme="default-dark-v1"] .__USER__ .n-button--primary-type,
 	background-color: var(--brand-secondary-color) !important;
 }
 
+
 /* ================= EXTRA STYLES ================= */
 
 .__USER__ #location_dashboard-btn-dashboard_switcher span svg {
 	stroke: var(--ghl-dashboard-icon-color) !important;
 }
 
-.__USER__ #location_dashboard-datepicker-dashboard_header_range .n-date-picker-icon,
-.__USER__ #location_dashboard-datepicker-dashboard_header_range .n-date-picker-icon > svg > g > g {
+.__USER__ #location_dashboard-datepicker-dashboard_header_range .n-date-picker-icon, .__USER__ #location_dashboard-datepicker-dashboard_header_range .n-date-picker-icon > svg > g > g {
 	fill: var(--ghl-dashboard-icon-color) !important;
 }
 
@@ -1040,5 +1144,5 @@ body[data-theme="default-dark-v1"] .__USER__ .n-button--primary-type,
 .__USER__ #sb_app-marketplace svg,
 .__USER__ #sb_location-mobile-app svg,
 .__USER__ #sb_settings svg {
-	display: none;
+ display: none;
 }
