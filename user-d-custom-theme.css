@@ -996,14 +996,14 @@ body .__USER__ #quickActions {
 }
 
 /* Back Button All CSS */
-.__USER__ .sidebar-v2-location #sidebar-v2 #backButtonv2,
-.__USER__ .sidebar-v2-agency #sidebar-v2 #backButtonv2 {
+.__USER__.sidebar-v2-location #sidebar-v2 #backButtonv2,
+.__USER__.sidebar-v2-agency #sidebar-v2 #backButtonv2 {
 	background-color: var(--menu-active-color) !important;
 	color: var(--menu-text-color) !important;
 }
 
-.__USER__ .sidebar-v2-location #sidebar-v2 #backButtonv2 + .menu-title,
-.__USER__ .sidebar-v2-agency #sidebar-v2 #backButtonv2 + .menu-title {
+.__USER__.sidebar-v2-location #sidebar-v2 #backButtonv2 + .menu-title,
+.__USER__.sidebar-v2-agency #sidebar-v2 #backButtonv2 + .menu-title {
 	color: var(--menu-text-color) !important;
 	padding-left: 20px !important;
 }
