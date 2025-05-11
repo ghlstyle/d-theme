@@ -963,7 +963,7 @@ body .__USER__ #quickActions {
 	filter: brightness(0) invert(1) !important;
 }
 
-.__USER__ .sidebar-v2-location #sidebar-v2 #globalSearchOpener .search-shortcut, .__USER__ .sidebar-v2-location #sidebar-v2 #quickActions .search-shortcut {
+.__USER__.sidebar-v2-location #sidebar-v2 #globalSearchOpener .search-shortcut, .__USER__ .sidebar-v2-location #sidebar-v2 #quickActions .search-shortcut {
 	background-color: color-mix(in srgb, #000000, transparent 80%) !important;
 	color: var(--white-color) !important;
 }
