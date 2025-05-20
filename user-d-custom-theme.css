@@ -124,15 +124,13 @@ html body .__USER__ .v2-open #sidebar-v2,
 
 /* Sidebar link hover state */
 .__USER__ #sidebar-v2 nav a:hover {
-	background-color: color-mix(in srgb, var(--menu-hover-color), transparent 0%) !important;
-  /*background-image: var(--sidebar-menu-bg-gradient) !important;*/
+	background:  var(--menu-active-color) !important;
 	border-width: 0px !important;
 }
 
 /* Sidebar link active state */
 .__USER__ #sidebar-v2 nav a.active {
-	background-color: color-mix(in srgb, var(--menu-active-color), transparent 0%) !important;
-  /*background-image: var(--sidebar-menu-bg-gradient) !important;*/
+	background:  var(--menu-active-color) !important;
 	border-width: 0px !important;
 }
 
@@ -433,46 +431,46 @@ html body .__USER__ .v2-open #sidebar-v2,
 }
 
 /* Show icon when menu is collapsed */
-.__USER__ .v2-collapse #sidebar-v2 nav a#sb_launchpad,
-.__USER__ .v2-collapse #sidebar-v2 nav a#sb_dashboard,
-.__USER__ .v2-collapse #sidebar-v2 nav a#sb_conversations,
-.__USER__ .v2-collapse #sidebar-v2 nav a#sb_calendars,
-.__USER__ .v2-collapse #sidebar-v2 nav a#sb_contacts,
-.__USER__ .v2-collapse #sidebar-v2 nav a#sb_opportunities,
-.__USER__ .v2-collapse #sidebar-v2 nav a#sb_payments,
-.__USER__ .v2-collapse #sidebar-v2 nav a[id="sb_AI Agents"],
-.__USER__ .v2-collapse #sidebar-v2 nav a#sb_email-marketing,
-.__USER__ .v2-collapse #sidebar-v2 nav a#sb_automation,
-.__USER__ .v2-collapse #sidebar-v2 nav a#sb_sites,
-.__USER__ .v2-collapse #sidebar-v2 nav a#sb_memberships,
-.__USER__ .v2-collapse #sidebar-v2 nav a#sb_app-media,
-.__USER__ .v2-collapse #sidebar-v2 nav a#sb_reputation,
-.__USER__ .v2-collapse #sidebar-v2 nav a#sb_reporting,
-.__USER__ .v2-collapse #sidebar-v2 nav a#sb_app-marketplace,
-.__USER__ .v2-collapse #sidebar-v2 nav a#sb_location-mobile-app,
-.__USER__ .v2-collapse #sidebar-v2 nav a#sb_settings {
+.__USER__.v2-collapse #sidebar-v2 nav a#sb_launchpad,
+.__USER__.v2-collapse #sidebar-v2 nav a#sb_dashboard,
+.__USER__.v2-collapse #sidebar-v2 nav a#sb_conversations,
+.__USER__.v2-collapse #sidebar-v2 nav a#sb_calendars,
+.__USER__.v2-collapse #sidebar-v2 nav a#sb_contacts,
+.__USER__.v2-collapse #sidebar-v2 nav a#sb_opportunities,
+.__USER__.v2-collapse #sidebar-v2 nav a#sb_payments,
+.__USER__.v2-collapse #sidebar-v2 nav a[id="sb_AI Agents"],
+.__USER__.v2-collapse #sidebar-v2 nav a#sb_email-marketing,
+.__USER__.v2-collapse #sidebar-v2 nav a#sb_automation,
+.__USER__.v2-collapse #sidebar-v2 nav a#sb_sites,
+.__USER__.v2-collapse #sidebar-v2 nav a#sb_memberships,
+.__USER__.v2-collapse #sidebar-v2 nav a#sb_app-media,
+.__USER__.v2-collapse #sidebar-v2 nav a#sb_reputation,
+.__USER__.v2-collapse #sidebar-v2 nav a#sb_reporting,
+.__USER__.v2-collapse #sidebar-v2 nav a#sb_app-marketplace,
+.__USER__.v2-collapse #sidebar-v2 nav a#sb_location-mobile-app,
+.__USER__.v2-collapse #sidebar-v2 nav a#sb_settings {
  display: inline-block !important;
 }
 
 /* Hide text when menu is collapsed */
-.__USER__ .v2-collapse #sb_launchpad::after,
-.__USER__ .v2-collapse #sb_dashboard::after,
-.__USER__ .v2-collapse #sb_conversations::after,
-.__USER__ .v2-collapse #sb_calendars::after,
-.__USER__ .v2-collapse #sb_contacts::after,
-.__USER__ .v2-collapse #sb_opportunities::after,
-.__USER__ .v2-collapse #sb_payments::after,
-.__USER__ .v2-collapse [id="sb_AI Agents"]::after,
-.__USER__ .v2-collapse #sb_email-marketing::after,
-.__USER__ .v2-collapse #sb_automation::after,
-.__USER__ .v2-collapse #sb_sites::after,
-.__USER__ .v2-collapse #sb_memberships::after,
-.__USER__ .v2-collapse #sb_app-media::after,
-.__USER__ .v2-collapse #sb_reputation::after,
-.__USER__ .v2-collapse #sb_reporting::after,
-.__USER__ .v2-collapse #sb_app-marketplace::after,
-.__USER__ .v2-collapse #sb_location-mobile-app::after,
-.__USER__ .v2-collapse #sb_settings::after {
+.__USER__.v2-collapse #sb_launchpad::after,
+.__USER__.v2-collapse #sb_dashboard::after,
+.__USER__.v2-collapse #sb_conversations::after,
+.__USER__.v2-collapse #sb_calendars::after,
+.__USER__.v2-collapse #sb_contacts::after,
+.__USER__.v2-collapse #sb_opportunities::after,
+.__USER__.v2-collapse #sb_payments::after,
+.__USER__.v2-collapse [id="sb_AI Agents"]::after,
+.__USER__.v2-collapse #sb_email-marketing::after,
+.__USER__.v2-collapse #sb_automation::after,
+.__USER__.v2-collapse #sb_sites::after,
+.__USER__.v2-collapse #sb_memberships::after,
+.__USER__.v2-collapse #sb_app-media::after,
+.__USER__.v2-collapse #sb_reputation::after,
+.__USER__.v2-collapse #sb_reporting::after,
+.__USER__.v2-collapse #sb_app-marketplace::after,
+.__USER__.v2-collapse #sb_location-mobile-app::after,
+.__USER__.v2-collapse #sb_settings::after {
 	display: none;
 }
 
@@ -640,7 +638,7 @@ html body .__USER__ .v2-open #sidebar-v2,
 }
 
 .__USER__ .topmenu-nav a div[role="menu"] {
-	background-color: var(--ghl-sidebar-color) !important;
+	background: var(--ghl-sidebar-color) !important;
 }
 
 /* ================= HEADER ICON STYLES ================= */
@@ -998,8 +996,8 @@ body .__USER__ #quickActions {
 /* Back Button All CSS */
 .__USER__.sidebar-v2-location #sidebar-v2 #backButtonv2,
 .__USER__.sidebar-v2-agency #sidebar-v2 #backButtonv2 {
-	background-color: var(--menu-active-color) !important;
-	color: var(--menu-text-color) !important;
+	background: var(--menu-active-color) !important;
+    	color: var(--menu-text-color) !important;
 }
 
 .__USER__.sidebar-v2-location #sidebar-v2 #backButtonv2 + .menu-title,
